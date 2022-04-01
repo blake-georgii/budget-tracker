@@ -6,7 +6,7 @@ const { MongoClient, ServerApiVersion } = require('mongodb');
 
 const PORT = process.env.PORT || 3001;
 
-const MONGODB_URI = "mongodb+srv://BlakeG:3Strikes@cluster0.h2c37.mongodb.net/transactions.challenges?retryWrites=true&w=majority";
+const MONGODB_URI = "mongodb+srv://BlakeG:3Strikes@cluster0.h2c37.mongodb.net/budget?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 client.connect(err => {
   const collection = client.db("test").collection("devices");
